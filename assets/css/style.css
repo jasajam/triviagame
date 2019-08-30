@@ -1,0 +1,38 @@
+/* * {
+} */
+
+body {
+  background-image: url("../images/jon-tyson-YNNtKJKDjCI-unsplash.jpg");
+}
+
+.inner {
+  background-color: #f9edd3;
+}
+
+input {
+  margin: 10px;
+}
+
+h1 {
+  color: #de5804;
+}
+
+h2 {
+  color: #109ec9;
+}
+
+.countdown {
+  text-shadow: 1.5px 1.5px 1.5px #964b01;
+}
+
+h4,
+p,
+label {
+  color: #964b01;
+}
+
+.final-results {
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #c40a77;
+}

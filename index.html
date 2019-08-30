@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Trivia Mania</title>
-    <link type="text/css" href="assets/css/style.css" rel="stylesheet">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link type="text/css" href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body class="text-center">
+    <div class="cover-container d-flex p-4 mx-auto my-auto flex-column">
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">Trivia is Cool</h1>
 
-    <h1>Trivia is Cool</h1>
+        <p class="lead">
+          Ok, buddy! You've got 200 seconds to pick the capitals of each of
+          these A-Z ordered countries, which may not always be on your radar. At
+          the end, you'll get a breakdown of how many countries you answered
+          correctly or incorrectly for as well as how many countries you
+          skipped! Ready, Set...
+        </p>
 
-    <!-- dogs -->
+        <!-- dogs -->
 
-    <div class="wrapper">
-        <button id="start">Start</button>
+        <div class="wrapper">
+          <button id="start" class="btn btn-primary">Let's Go!</button>
+        </div>
+      </main>
     </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/javascript/app.js"></script>
-</body>
+  </body>
 </html>

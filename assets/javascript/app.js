@@ -169,11 +169,11 @@ $(document).ready(function() {
 
     $(".wrapper").append(timeDisplay);
     timeDisplay.html(
-      "<p>Time Remaining (in seconds): <span id=timeLeft></span></p>"
+      "<h2 class='countdown'>Time Remaining (in seconds): <span id=timeLeft></span></h2>"
     );
 
     // start counting down one second after ideal time (since a second elapses before this appears)
-    decrementTime(89);
+    decrementTime(199);
 
     // where questions actually get shown
     var quizDisplay = $("<div>");
@@ -209,7 +209,7 @@ $(document).ready(function() {
       var promptContent = array[i].question;
       var choicesContent = array[i].answers;
 
-      var prompt = $("<p>").text(promptContent);
+      var prompt = $("<h4>").text(promptContent);
       $(prompt).addClass("question");
       prompt.attr("data-question", i);
       $(quiz).append(prompt);
@@ -260,15 +260,21 @@ $(document).ready(function() {
   function showResults() {
     assessResults();
 
-    var resultsDisplay = $(".wrapper").html("<div>");
+    var resultsDisplay = $(".wrapper").html("<div class='final-results'>");
 
-    $(resultsDisplay).append("<h2> Here's how you did");
+    $(resultsDisplay).append("<h2> Here's how you did</h2>");
 
-    $(resultsDisplay).append("<p>Number of correct answers:" + correct);
+    $(resultsDisplay).append(
+      "<h4>Number of correct answers: " + correct + "</h2>"
+    );
 
-    $(resultsDisplay).append("<p>Number of incorrect answers:" + wrong);
+    $(resultsDisplay).append(
+      "<h4>Number of incorrect answers: " + wrong + "</h2>"
+    );
 
-    $(resultsDisplay).append("<p>Number of unanswered questions:" + unanswered);
+    $(resultsDisplay).append(
+      "<h4>Number of unanswered questions: " + unanswered + "</h2>"
+    );
   }
 
   // A FUNCTION USED JUST ONCE TO DETERMINE QUIZ ANSWERS
